@@ -1,0 +1,224 @@
+* {
+  /*standard reset*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*Universal styling*/
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v45/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfIA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poiretone/v16/UqyVK80NJXN4zfRgbdfbo55cVw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*extra for later
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/redhatdisplay/v19/8vIf7wUr0m80wwYf0QCXZzYzUoTK8RZQvRd-D1NYbmyWQk8z-A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+*/
+
+@font-face {
+  font-family: 'Zeyada';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/zeyada/v19/11hAGpPTxVPUbgZzM2ys.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: "comfortaa", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 800;
+}
+
+.mission h2,
+.mission p {
+  position: relative;
+  top: 15.6rem;
+  text-align: center;
+  color: black;
+  background-color: orange;
+  opacity: .85;
+  border: solid;
+  /*width: 70%;
+  How do I center this*/
+}
+
+.services h2, 
+.our-team h2,
+.contact-us h2 {
+  text-align: center;
+  color: black;
+  background-color: orange;
+  opacity: .85;
+  border: solid;
+}
+
+header {
+  background-color: #444C18;
+}
+
+.logo {
+  display: inline-block;
+  background-image: url("https://plus.unsplash.com/premium_photo-1664543649717-8cb72bb50f64?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZHJhd24lMjBsZWFmfGVufDB8fDB8fHww");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 2rem;
+  line-height: 1.8;
+  border-radius: 50%;
+  width: 8rem;
+  border: double 2px black;
+  margin: 1.5rem;
+  
+}
+
+.logo p {
+  padding-left: 25px;
+  font-family: "comfortaa", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav a {
+  color: white;
+}
+
+.banner h1 {
+  padding: 1rem;
+}
+
+.banner-images {
+  background-position: center; /*Fixed the image alignment*/
+  display: flex;
+  justify-content: center; 
+  overflow: hidden;
+}
+
+.banner-images img {
+  max-height: 20rem;
+  max-width: 100%;
+}
+
+.mission {
+  background-image: url("https://images.unsplash.com/photo-1571192776145-9f563c1df686?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z2FyZGVufGVufDB8fDB8fHww");
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 40rem;
+}
+
+.services {
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#edible-landscaping,
+#amendments,
+#irrigation,
+#food-forests,
+#architecture
+ {
+  display: inline-block;
+  justify-content: space-around;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  background-color: #4B6B1A;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px black;
+}
+
+.service-cards img {
+  height: 300px;
+  width: auto;
+}
+
+.our-team {
+  position: relative;
+  top: 2.5rem;
+}
+
+.staff {
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#Sasha,
+#Joe {
+  display: inline-block;
+  justify-content: space-around;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  background-color: #5D0000;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px black;
+}
+
+.staff img {
+  height: 400px;
+  width: 350px;
+  object-fit: none;
+}
+
+footer .contact-us {
+  position: relative;
+  top: 5rem;
+  background-image: url("https://media.istockphoto.com/id/1420489194/photo/farmer-man-holding-wooden-box-full-of-fresh-raw-vegetables-basket-with-fresh-organic.webp?b=1&s=170667a&w=0&k=20&c=M4v3KdevnUFJyIO9o2a_Dep4uff65vTfbMcnhX3PwLo=");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-us {
+  height: 200px;
+}
+
+
+.contact-us p {
+  position: relative;
+  top: 6rem;
+  font-size: 1.5rem;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  opacity: .9;
+}
+
+#copyright {
+  position: relative;
+  top: 5rem;
+  font-size: .7rem;
+  font-weight: 600;
+  padding: 10px;
+}
+
+
+
